@@ -4,9 +4,10 @@ import React from 'react';
 
 // import data from './data';
 
-import datanew from './data-new';
+// import datanew from './data-new';
 
-import ListItem from './ListItem';
+// import ListItem from './ListItem';
+import Final from  "./useStates/Final/4-useStateexmple-2";
 
 
 // const App = () => {
@@ -47,19 +48,29 @@ import ListItem from './ListItem';
 
 
 
-const App = () => {
-    const clickHandle = () => {
-        console.log("Hello I clicked");
-    };
+// const App = () => {
+//     const clickHandle = () => {
+//         console.log("Hello I clicked");
+//     };
 
-    return (
-        <main className="container">
-<button className="button" onClick={clickHandle}>
-    Click Me 
-</button>
+//     return (
+//         <main className="container">
+// <button className="button" onClick={clickHandle}>
+//     Click Me 
+// </button>
 
-        </main>
-    )
+//         </main>
+//     )
+// }
+function App () {
+    return(
+        <div>
+        <Final />
+        </div>
+    );
+
 }
 
+
 export default App;
+
