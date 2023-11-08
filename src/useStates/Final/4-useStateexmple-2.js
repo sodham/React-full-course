@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 
 const Index = () => {
-    const [firstName, setFirstName]= useState("Sodham");
-    const [email, setemail]= useState("ds@gmail.com");
+    const [firstName, setFirstName]= useState("");
+    const [email, setemail]= useState("");
     const [password, setpassword]= useState("");
 
     const changeFirstName = (e) =>{
@@ -19,11 +19,15 @@ const Index = () => {
         setemail(e.target.value);
     }
 
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+    }
+
 
   return (
     <div>
 
-    <form>
+    <form onSubmit={handleSubmit}>
        
 <input type="text" name="firstname" id="firstname"  placeholder="enter your name" value={firstName} onChange={changeFirstName}></input>
 <input type="email" name="email" id="email" value={email} placeholder="enter your email" onChange={changeEmail}></input>
